@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatSci</title>
+    <title>Articles - MatSci</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2DhKNj5UbN+7i2ApNcWkEU5dWLCaN0hDfwE3G1dKt2xCpXSR2+mKDZ1fUbwI0m1NQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .main-content {
             padding: 20px;
@@ -52,7 +53,7 @@
             margin: 0 10px;
         }
         .quick-links{
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .form-inline{
             margin-top: 10px;
@@ -71,6 +72,10 @@
             .form-inline{
                 margin-top: 20px;
             }
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -102,24 +107,43 @@
 
     <!-- Main Content Section -->
     <div class="container main-content">
-        <h1>Welcome to MatSci</h1>
-        <p>Materials Science and Engineering is an interdisciplinary field that focuses on the design and discovery of new materials, particularly solids. It encompasses elements of physics, chemistry, and engineering.</p>
-        <img src="path/to/image1.jpg" class="img-fluid" alt="Responsive image">
-        <br>
-        <br>
-        <br>
-        <h2>Understanding the Basics</h2>
-        <p>The study of materials science involves investigating the properties and behaviors of materials, including metals, ceramics, polymers, and composites. By understanding these properties, scientists can create materials with desired characteristics for specific applications.</p>
-        <img src="path/to/image2.jpg" class="img-fluid" alt="Responsive image">
-        <br>
-        <br>
-        <br>
-        <h2>Applications of Materials Science</h2>
-        <p>Materials science has a wide range of applications, from developing stronger and lighter materials for aerospace to creating more efficient photovoltaic materials for solar energy. Innovations in materials science are driving advances in technology and improving everyday life.</p>
-        <img src="path/to/image3.jpg" class="img-fluid" alt="Responsive image">
-        <br>
-        <p>For instance, in the field of electronics, materials scientists are working on developing new semiconductor materials to create faster and more efficient devices. In healthcare, new biomaterials are being designed for use in medical implants and drug delivery systems.</p>
+        <h1>Articles</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="path/to/image1.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 1</h5>
+                        <p class="card-text">A brief description of the article. This can be a short summary or an introduction to the content of the article.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="path/to/image2.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 2</h5>
+                        <p class="card-text">A brief description of the article. This can be a short summary or an introduction to the content of the article.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="path/to/image3.jpg" class="card-img-top" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 3</h5>
+                        <p class="card-text">A brief description of the article. This can be a short summary or an introduction to the content of the article.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
 
     <!-- Footer Section -->
     <footer class="footer text-center">
@@ -143,12 +167,12 @@
                         </div>
                         <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
                     </form>
-                    <div class="social-media">
-                        <a href="#" class="text-dark"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x ml-3"></i></a>
-                        <a href="#" class="text-dark"><i class="fab fa-linkedin fa-2x ml-3"></i></a>
-                    </div>
                 </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/DissanayakeLYB/" class="text-dark" target="_blank"><i class="fa fa-facebook fa-x"></i></a>
+                <a href="https://www.youtube.com/@MatSci4life" class="text-dark" target="_blank"><i class="fa fa-youtube-play fa-x ml-3"></i></a>
+                <a href="https://www.linkedin.com/in/lasith-dissanayake/" class="text-dark" target="_blank"><i class="fa fa-linkedin fa-x ml-3"></i></a>
             </div>
             <p>&copy; 2024 MatSci. All rights reserved.</p>
         </div>
