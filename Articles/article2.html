@@ -4,40 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatSci</title>
-    <link rel="icon" type="image/jpeg" href="/Images/MatSci-logo.png">
+    <link rel="icon" type="image/jpeg" href="Images/MatSci-logo.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2DhKNj5UbN+7i2ApNcWkEU5dWLCaN0hDfwE3G1dKt2xCpXSR2+mKDZ1fUbwI0m1NQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4347682740081394"
      crossorigin="anonymous"></script>
     <style>
+        body {
+            background-color: #343a40;
+        }
         .main-content {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
-            text-align: justify;
+            font-size: large;
+            letter-spacing: 1px;
         }
         .footer {
             padding: 20px;
-            background: #f8f9fa;
         }
         .footer .social-media {
             margin: 15px 0;
         }
-        .dark-mode {
-            background-color: #343a40;
+        .nav-link, .navbar-brand{
+            color: #ffffff;
+            
+        }
+        .navbar-brand:hover{
+            color: #ffffff;
+            
+        }
+        .nav-link:hover{
+            color: #676666;
+            
+        }
+        .navbar a, .footer {
+            color: rgb(255, 255, 255);            
+        }
+        .navbar a:hover{
+            color: #b4b4b4;
+            
+        }
+        .nav-link, p, h1, form, label {
             color: white;
         }
-        .dark-mode .navbar, .dark-mode .footer {
-            background-color: #495057;
-        }
-        .dark-mode .navbar-brand, .dark-mode .nav-link, .dark-mode p, .dark-mode h1, .dark-mode form, .dark-mode label {
+        .social-media i{
             color: white;
         }
-        .dark-mode .footer {
-            background-color: #343a40;
-        }
-        .dark-mode .btn-primary {
+        .btn-primary {
             background-color: #007bff;
             border-color: #007bff;
         }
@@ -66,9 +81,9 @@
         }
         .logo-matsci{
             max-width: 60%;
-            border-radius: 10%;
             padding: 0;
             margin: auto 20%;
+            filter: drop-shadow(0 0 10px #1caa84);
         }
         @media (max-width: 768px) {
             .footer .quick-links {
@@ -89,7 +104,7 @@
 </head>
 <body>
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">MatSci</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -109,15 +124,24 @@
                     <a class="nav-link" href="/about.html">About</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-none ml-3" id="modeToggle">🌚</button>
         </div>
     </nav>
 
     <!-- Main Content Section -->
     <div class="container main-content">
         <h1>Article 02</h1>
+        <br>
+        <img src="/Images/MatSci-NoBG.png" class="img-fluid logo-matsci" alt="MatSci logo">
+        <br>
+        <br>
+        <br>
         <p>Materials Science and Engineering is an interdisciplinary field that focuses on the design and discovery of new materials, particularly solids. It encompasses elements of physics, chemistry, and engineering.</p>
-        <img src="Images/MatSci.png" class="img-fluid logo-matsci" alt="MatSci logo">
+        <p>The study of materials science involves investigating the properties and behaviors of materials, including metals, ceramics, polymers, and composites. By understanding these properties, scientists can create materials with desired characteristics for specific applications.</p>
+        <p>Materials science has a wide range of applications, from developing stronger and lighter materials for aerospace to creating more efficient photovoltaic materials for solar energy. Innovations in materials science are driving advances in technology and improving everyday life.</p>
+        <p>For instance, in the field of electronics, materials scientists are working on developing new semiconductor materials to create faster and more efficient devices. In healthcare, new biomaterials are being designed for use in medical implants and drug delivery systems.</p>
+        <br>
+        <br>
+        <br>
 
     </div>
 
@@ -154,16 +178,5 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        const modeToggle = document.getElementById('modeToggle');
-        modeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            modeToggle.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌚';
-        });
-    </script>
 </body>
 </html>

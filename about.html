@@ -8,41 +8,60 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2DhKNj5UbN+7i2ApNcWkEU5dWLCaN0hDfwE3G1dKt2xCpXSR2+mKDZ1fUbwI0m1NQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4347682740081394"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4347682740081394" crossorigin="anonymous"></script>
     <style>
+        body {
+            background-color: #343a40;
+            color: #ffffff;
+        }
         .main-content {
             padding: 20px;
-            max-width: 800px;
+            max-width: 1100px;
             margin: 0 auto;
-            text-align: justify;
+            text-align: justify;            
+            font-size: large;
+            letter-spacing: 1px;
+        }
+        .main-content img{
+            filter: drop-shadow(0px 0px 1px #ffffff);
         }
         .footer {
             padding: 20px;
-            background: #f8f9fa;
+            background: #cecfcf;
         }
         .footer .social-media {
             margin: 15px 0;
         }
-        .dark-mode {
-            background-color: #343a40;
-            color: white;
-        }
-        .dark-mode .navbar, .dark-mode .footer {
-            background-color: #495057;
-        }
-        .dark-mode .navbar-brand, .dark-mode .nav-link, .dark-mode p, .dark-mode h1, .dark-mode form, .dark-mode label {
-            color: white;
-        }
-        .dark-mode .footer {
+        .navbar, .footer {
             background-color: #343a40;
         }
-        .dark-mode .btn-primary {
+        .nav-link:hover {
+            color: #b4b4b4;
+        }
+        .nav-link:hover {
+            color: #b4b4b4;
+        }
+        .nav-link, p, h1, form, label {
+            color: white;
+        }
+        .footer {
+            background-color: #343a40;
+        }
+        .btn-primary {
             background-color: #007bff;
             border-color: #007bff;
         }
         .navbar-nav .nav-item {
             margin-left: 15px;
+        }
+        .nav-link, .navbar-brand {
+            color: #ffffff;
+        }
+        .navbar-brand:hover {
+            color: #ffffff;
+        }
+        .navbar-brand{
+            color: #ffffff;
         }
         #modeToggle {
             outline: none;
@@ -58,11 +77,14 @@
         .footer .quick-links a {
             margin: 0 10px;
         }
-        .quick-links{
+        .quick-links {
             margin-top: 15px;
         }
-        .form-inline{
+        .form-inline {
             margin-top: 10px;
+        }
+        .social-media i{
+            color: white;
         }
         @media (max-width: 768px) {
             .footer .quick-links {
@@ -71,19 +93,25 @@
             .footer .quick-links a {
                 margin: 5px 0;
             }
-            .quick-links{
-                margin-top: 05px;
+            .quick-links {
+                margin-top: 5px;
                 margin-bottom: 35px;
             }
-            .form-inline{
+            .form-inline {
                 margin-top: 20px;
+            }
+            .pro-pic {
+                margin: 0 5% 15% 0;
+            }
+            .about-text {
+                width: 100vw;
             }
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">MatSci</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,21 +131,21 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-none ml-3" id="modeToggle">🌚</button>
         </div>
     </nav>
 
     <!-- Main Content Section -->
     <div class="container main-content">
-        <h1>About Me</h1>
+        <!-- <h1>About Me</h1> -->
         <div class="row">
             <div class="col-md-4">
                 <br>
-                <img src="Images/lasith.png" class="img-fluid rounded-circle" alt="Lasith Dissanayake">
+                <img src="Images/lasith.png" class="pro-pic img-fluid rounded-circle" alt="Lasith Dissanayake">
             </div>
-            <div class="col-md-8">
-                <p> <b>Welcome to MatSci!</b> <br> <br>My name is Lasith Dissanayake, and I am passionate about <b>Materials Science and Engineering</b>. With a background in <b>metallurgy</b>, <b>smart materials</b>, <b>photovoltaic materials</b>, and <b>polymers</b>, I aim to share my knowledge and insights with a wider audience.</p>
-                <p>I'm an undergraduate of University of Moratuwa, who is pursuing in Materials Science and Engineering and have worked on various projects involving <b>Machine Learning, Python programming, and problem-solving</b>. My experience includes handling complex projects and developing innovative solutions in the field of materials science.</p>
+            <div class="about-text col-md-8">
+                <br>
+                <p>Hey there! <br><br>My name is Lasith Dissanayake, and I am passionate about <b>Materials Science and Engineering</b>. With a background in <b>Metallurgy</b>, <b>Smart Materials</b>, <b>Photovoltaic Materials</b>, and <b>Polymers</b>, I aim to share my knowledge and insights with a wider audience.</p>
+                <p>I'm an undergraduate of University of Moratuwa, pursuing a degree in Materials Science and Engineering. I have worked on various projects involving <b>Machine Learning, Python programming, and problem-solving</b>. I also have experience in 3D modeling and simulations, using software such as <b>SolidWorks, SolidEdge, AutoCAD</b>, and <b>Blender</b> for 3D animations. My experience includes handling complex projects and developing innovative solutions in the field of materials science.</p>
                 <p>Through this website, I hope to provide valuable information, articles, and resources that will inspire and educate those interested in this fascinating field. Whether you are a student, researcher, or enthusiast, I invite you to explore the content and join me on this journey of discovery.</p>
             </div>
         </div>
@@ -125,7 +153,6 @@
     <br>
     <br>
     <br>
-
 
     <!-- Footer Section -->
     <footer class="footer text-center">
@@ -160,16 +187,5 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        const modeToggle = document.getElementById('modeToggle');
-        modeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            modeToggle.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌚';
-        });
-    </script>
 </body>
 </html>

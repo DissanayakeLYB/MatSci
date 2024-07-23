@@ -8,9 +8,12 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2DhKNj5UbN+7i2ApNcWkEU5dWLCaN0hDfwE3G1dKt2xCpXSR2+mKDZ1fUbwI0m1NQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4347682740081394"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4347682740081394" crossorigin="anonymous"></script>
     <style>
+        body {
+            background-color: #343a40;
+            color: #ffffff;
+        }
         .main-content {
             padding: 20px;
         }
@@ -21,20 +24,22 @@
         .footer .social-media {
             margin: 15px 0;
         }
-        .dark-mode {
-            background-color: #343a40;
-            color: white;
-        }
-        .dark-mode .navbar, .dark-mode .footer {
+        .navbar,  .footer {
             background-color: #495057;
         }
-        .dark-mode .navbar-brand, .dark-mode .nav-link, .dark-mode p, .dark-mode h1, .dark-mode form, .dark-mode label {
+        .nav-link,  p,  h1,  form,  label, .navbar-brand, .navbar-brand:hover {
             color: white;
         }
-        .dark-mode .footer {
+        .navbar, .footer {
             background-color: #343a40;
         }
-        .dark-mode .btn-primary {
+        .nav-link:hover {
+            color: #b4b4b4;
+        }
+        .footer {
+            background-color: #343a40;
+        }
+        .btn-primary {
             background-color: #007bff;
             border-color: #007bff;
         }
@@ -55,11 +60,31 @@
         .footer .quick-links a {
             margin: 0 10px;
         }
-        .quick-links{
+        .quick-links {
             margin-top: 15px;
         }
-        .form-inline{
+        .form-inline {
             margin-top: 10px;
+        }
+        .social-media i{
+            color: white;
+        }
+        .article-card{
+            background-color: #ffffff50;
+            color: #000000;            
+            transition-duration: 300ms ;
+            border-radius: 10px;
+        }
+        .article-card:hover{
+            background-color: #ffffff75;
+            scale: 1.02;
+            transition-duration: 300ms ;
+        }
+        .article-card p {
+            color: #000000;
+        }
+        .article-card img {
+            scale: 0.7;
         }
         @media (max-width: 768px) {
             .footer .quick-links {
@@ -68,11 +93,11 @@
             .footer .quick-links a {
                 margin: 5px 0;
             }
-            .quick-links{
-                margin-top: 05px;
+            .quick-links {
+                margin-top: 5px;
                 margin-bottom: 35px;
             }
-            .form-inline{
+            .form-inline {
                 margin-top: 20px;
             }
         }
@@ -84,7 +109,7 @@
 </head>
 <body>
     <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">MatSci</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -104,17 +129,17 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-none ml-3" id="modeToggle">🌚</button>
         </div>
     </nav>
 
     <!-- Main Content Section -->
     <div class="container main-content">
-        <h1>Articles</h1>
+        <h1>Top Articles</h1>
+        <br>
         <div class="row">
             <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="path/to/image1.jpg" class="card-img-top" alt="Article Image">
+                <div class="card mb-4 article-card">
+                    <img src="Images/MatSci-NoBG.png" class="card-img-top" alt="Article Image">
                     <div class="card-body">
                         <h5 class="card-title">Article Title 1</h5>
                         <p class="card-text">A brief description of the article. This can be a short summary or an introduction to the content of the article.</p>
@@ -122,9 +147,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="path/to/image2.jpg" class="card-img-top" alt="Article Image">
+            <div class="col-md-4 ">
+                <div class="card mb-4 article-card">
+                    <img src="Images/MatSci-NoBG.png" class="card-img-top" alt="Article Image">
                     <div class="card-body">
                         <h5 class="card-title">Article Title 2</h5>
                         <p class="card-text">A brief description of the article. This can be a short summary or an introduction to the content of the article.</p>
@@ -133,8 +158,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="path/to/image3.jpg" class="card-img-top" alt="Article Image">
+                <div class="card mb-4 article-card">
+                    <img src="Images/MatSci-NoBG.png" class="card-img-top" alt="Article Image">
                     <div class="card-body">
                         <h5 class="card-title">Article Title 3</h5>
                         <p class="card-text">A brief description of the article. This can be a short summary or an introduction to the content of the article.</p>
@@ -144,9 +169,6 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
 
     <!-- Footer Section -->
     <footer class="footer text-center">
@@ -181,16 +203,5 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        const modeToggle = document.getElementById('modeToggle');
-        modeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            modeToggle.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌚';
-        });
-    </script>
 </body>
 </html>
